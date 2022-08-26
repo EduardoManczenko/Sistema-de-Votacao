@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1. Login com a metamask</h1>
+    <button onclick="loginMetamask()">Login</button>
+    <h2>Carteira: <span id="carteira"></span></h2>
+    <h2>USDT: <span id="saldoUsdt"></span></h2>
+    <h2>Fragmentos: <span id="saldoFragmentos"></span></h2>
+    <h2>NFTs: <span id="saldoNft"></span></h2>
+    <button onclick="attSaldo()">Atualizar saldo</button>
+    <br>
+
+    <h2>2. Compre Fragmentos com USDT para ter sua NFT</h2>
+    <h1>Compre Fragmentos</h1>
+    <h2>USDT: <input type="text" id="amount"></h2>
+    <button onclick="enviarUsdt()">Enviar</button>
+    <br>
+
+    <h2>3. Após comprar 10 Fragmentos, pode criar sua NFT</h2>
+    <button onclick="mint()">Mint</button>
+
+    <h1>Votação</h1>
+    <h2>Tenha uma NFT em posse para votar</h2>
+    <button onclick="votarPerm()">Abrir Votação</button>
+    <span id="votoForm"></span>
+    
+    
+
+    <script src="metamask.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+</body>
+</html>
